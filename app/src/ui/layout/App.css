@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+    background: red;
+} */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.verde {
+    background: rgb(27, 184, 27);
+}
+.rojo {
+    background: red;
+}
+/* .jm-logo-container {
+    color: blue;
+} */
