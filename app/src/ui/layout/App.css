@@ -15,8 +15,11 @@
 .verde {
     background: rgb(27, 184, 27);
 }
-.rojo {
-    background: #ff0000;
+.success {
+    background: #43a047 !important;
+}
+.warning {
+    background: #ff0000 !important;
 }
 /* .jm-logo-container {
     color: blue;

@@ -13,8 +13,10 @@ export default class Notif extends Component {
             shouldRenderNotification : false
         }
         this.openNotification = this.openNotification.bind(this)
+        
     }
     openNotification() {
+
         this.setState({
             shouldRenderNotification: true
         })
@@ -25,7 +27,10 @@ export default class Notif extends Component {
         }
     }
     renderNotification() {
+        
         if (this.state.shouldRenderNotification) {
+        console.log('renderNotif');
+
             this.notificationTimeout = window.setTimeout(function() {
                 this.setState({
                     shouldRenderNotification: false
