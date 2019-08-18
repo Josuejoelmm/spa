@@ -1,3 +1,4 @@
 import React from 'react'
+import Formulario from '../widgets/Formulario'
 
-export default () => 'Contacto';
+export default () => <Formulario />;

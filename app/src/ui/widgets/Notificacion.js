@@ -104,7 +104,7 @@ export default function CustomizedSnackbars(props) {
   return (
     <div>
       <Button variant="outlined" className={classes.margin} onClick={handleClick}>
-        Open success snackbar
+        Mostrar Notificacion
       </Button>
       <Snackbar
         anchorOrigin={{
@@ -112,14 +112,13 @@ export default function CustomizedSnackbars(props) {
           horizontal: 'left',
         }}
         open={open}
-        autoHideDuration={null}
-        // {props.tiempo ? props.tiempo : 3000}
+        autoHideDuration={props.tiempo ? props.tiempo : 3000}
         onClose={handleClose}
       >
         <MySnackbarContentWrapper
           onClose={handleClose}
           variant="success"
-          message="Eres tu bebe?"
+          message={props.mensaje ? props.mensaje : 'Se realizo con exito !'}
         />
       </Snackbar>
     </div>
